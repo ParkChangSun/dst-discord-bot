@@ -1,0 +1,29 @@
+{
+  "name": "dst-discord-bot",
+  "version": "1.0.0",
+  "description": "Don't starve Scheduler in Typescript : discord bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParkChangSun/dst-discord-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParkChangSun/dst-discord-bot/issues"
+  },
+  "homepage": "https://github.com/ParkChangSun/dst-discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2"
+  }
+}
