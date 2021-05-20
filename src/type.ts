@@ -4,5 +4,5 @@ export interface DBotCommand {
   readonly commandName: string;
   readonly argsExpected: number;
   readonly expectedUsage: string;
-  execute(message: Message, args: string[]): void;
+  execute(message: Message, args: string[]): void | Promise<any>;
 }

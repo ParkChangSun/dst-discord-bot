@@ -5,7 +5,7 @@ export default class ItemCommand implements DBotCommand {
   readonly commandName: string = "item";
   readonly argsExpected: number = 1;
   readonly expectedUsage: string = "item <itemName>";
-  public execute(message: Message, args: String[]): void {
+  public execute(message: Message, args: string[]): void {
     if (args.length !== this.argsExpected) {
       message.channel.send("not expected usage");
       return;
